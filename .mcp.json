@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "loopthink": {
+      "type": "http",
+      "url": "https://mcp.eu.loopthink.ai/mcp"
+    }
+  }
+}
