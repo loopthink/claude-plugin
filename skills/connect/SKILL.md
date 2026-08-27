@@ -41,7 +41,7 @@ Diagnose in this order:
    connected. If it shows an auth error, clear authentication and retry.
 2. **Confirm the workspace.** If they picked the wrong one during login, the tool
    list will be empty or unfamiliar. Re-authenticate and pick again.
-3. **Check the grant.** In the Loopthink web app (<https://www.eu.loopthink.ai>):
+3. **Check the grant.** In the Loopthink web app (<https://app.eu.loopthink.ai>):
    the MCP server → **Access** tab → is the user's member group listed with
    *All tools* or a *Selected* subset? If not, an owner or admin adds it there.
    If the user belongs to no group at all, fix that under **Members** first.

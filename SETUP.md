@@ -32,7 +32,7 @@ result, not a bug. The connector unions only the MCP servers the signed-in user'
 member group was explicitly granted — there is deliberately no owner or admin
 bypass, so even a workspace owner sees nothing until a grant exists.
 
-Tell the user to open the Loopthink web app at <https://www.eu.loopthink.ai>, then:
+Tell the user to open the Loopthink web app at <https://app.eu.loopthink.ai>, then:
 
 1. Go to the MCP server they expect to see → **Access** tab.
 2. Confirm the user's member group is listed with either *All tools* or a
