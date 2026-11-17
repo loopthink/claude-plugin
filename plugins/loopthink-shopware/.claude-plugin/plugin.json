@@ -2,7 +2,7 @@
   "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
   "name": "loopthink-shopware",
   "displayName": "Shopware by Loopthink",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Ask about the orders, customers, products and stock of your Shopware 6 shop in plain language. Read-only unless you allow more.",
   "author": {
     "name": "Loopthink (TechnologyCircle GmbH)",
