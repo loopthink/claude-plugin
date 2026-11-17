@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "google-ads": {
+      "type": "http",
+      "url": "https://mcp.eu.loopthink.ai/chatgpt/google-ads"
+    }
+  }
+}

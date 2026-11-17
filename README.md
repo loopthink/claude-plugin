@@ -1,15 +1,12 @@
-# Loopthink for Claude Code
+# Loopthink plugins for Claude
 
-Governed access to your company's databases, CRMs and internal APIs — from inside
-Claude Code.
+[Loopthink](https://www.loopthink.ai) is the AI Gateway for teams. You connect
+the systems you already run once, and your team reaches them from Claude with
+one sign-in each, access per member group, masking on the server and a log of
+every call.
 
-[Loopthink](https://www.loopthink.ai) is an MCP control plane. Admins connect
-systems once, curate which tools each one exposes, and grant them to member
-groups. This plugin bundles the resulting connector plus the skills Claude needs
-to use it well: what a workspace exposes, how to query it without scanning a
-production table, and what to do when a masked field or a missing grant shows up.
-
-One OAuth sign-in, no API keys, no per-system setup.
+This repository holds the Claude plugins for it: one for the whole workspace,
+and one per product for people who want exactly that system in Claude.
 
 ## Install
 
@@ -21,86 +18,48 @@ claude plugin marketplace add loopthink/claude-plugin
 claude plugin install loopthink@loopthink-ai
 ```
 
-Then authenticate: run `/mcp`, select `loopthink`, choose **Authenticate**, sign
-in, and pick a workspace. Ask Claude to *"set up Loopthink"* and it will walk you
-through it.
+Replace `loopthink` with any name from the table. Then run `/mcp`, select the
+server and choose **Authenticate**.
 
-Full walkthrough: <https://www.loopthink.ai/connect-claude/>
+## Plugins
 
-## What you get
-
-| Component | Name | What it does |
+| Plugin | Name | What it does |
 | --- | --- | --- |
-| MCP server | `loopthink` | Streamable-HTTP connector at `https://mcp.eu.loopthink.ai/mcp`, OAuth 2.0 with PKCE and dynamic client registration |
-| Skill | `/loopthink:connect` | Connect, switch workspace, and diagnose an empty tool list |
-| Skill | `/loopthink:explore-workspace` | Map the servers, tables, entities and tools you can reach |
-| Skill | `/loopthink:query-data` | Access patterns, pagination, cross-system joins, masked fields |
-| Subagent | `loopthink:data-analyst` | Runs multi-step data questions in its own context and returns the finding |
+| [Loopthink](plugins/loopthink) | `loopthink` | Everything your workspace granted you through one connector, with skills for exploring and querying it |
+| [Google Search Console by Loopthink](plugins/loopthink-search-console) | `loopthink-search-console` | Ask Google Search Console in plain language. Queries, pages, clicks and rankings. Read-only, no API key. |
+| [Google Ads by Loopthink](plugins/loopthink-google-ads) | `loopthink-google-ads` | Ask Google Ads in plain language. Campaigns, keywords and costs. No API key, no setup. |
+| [Google Analytics by Loopthink](plugins/loopthink-google-analytics) | `loopthink-google-analytics` | Ask GA4 in plain language. Sessions, conversions and landing pages. Read-only, no API key. |
+| [SFTP by Loopthink](plugins/loopthink-sftp) | `loopthink-sftp` | Browse and read the files on your SFTP server in plain language. Uploads only where you allow them. |
+| [SSH by Loopthink](plugins/loopthink-ssh) | `loopthink-ssh` | Check and run your Linux servers in plain language. Disk, memory, services, logs and any command. |
+| [PostgreSQL by Loopthink](plugins/loopthink-postgres) | `loopthink-postgres` | Ask your PostgreSQL database questions in plain language. Read-only unless you allow changes, with every statement logged. |
+| [MySQL by Loopthink](plugins/loopthink-mysql) | `loopthink-mysql` | Ask your MySQL database questions in plain language. Read-only unless you allow changes, with every statement logged. |
+| [SQL Server by Loopthink](plugins/loopthink-mssql) | `loopthink-mssql` | Ask your SQL Server database questions in plain language. Read-only unless you allow changes, with every statement logged. |
+| [S3 by Loopthink](plugins/loopthink-s3) | `loopthink-s3` | Browse and read the objects in your S3 bucket in plain language. Amazon S3 and S3-compatible storage. Uploads only where you allow them. |
+| [Lexware Office by Loopthink](plugins/loopthink-lexware-office) | `loopthink-lexware-office` | Ask about the invoices, quotations, vouchers, contacts and payments in your Lexware Office account in plain language. Read-only unless you allow more. |
+| [sevDesk by Loopthink](plugins/loopthink-sevdesk) | `loopthink-sevdesk` | Ask about the invoices, orders, vouchers, contacts and bank transactions in your sevDesk account in plain language. Read-only unless you allow more. |
+| [Odoo by Loopthink](plugins/loopthink-odoo) | `loopthink-odoo` | Ask about the contacts, sales, invoices, stock, CRM and projects in your Odoo database in plain language. Read-only unless you allow more. Odoo 19 and newer. |
+| [Shopware by Loopthink](plugins/loopthink-shopware) | `loopthink-shopware` | Ask about the orders, customers, products and stock of your Shopware 6 shop in plain language. Read-only unless you allow more. |
 
-Tools arrive namespaced as `{serverKey}__{toolName}` — the prefix identifies which
-MCP server in your workspace they belong to, so `orders__get_order` and
-`crm__search_contacts` can coexist.
-
-## Requirements
-
-- Claude Code v2.1.143 or later
-- A Loopthink account and membership in at least one workspace
-- Your member group granted access to at least one MCP server in that workspace
-
-That last one matters: the connector publishes only what the signed-in user's
-member group was granted, with **no owner or admin bypass**. A workspace owner
-with no group grant sees zero tools. If your tool list is empty after a successful
-sign-in, that is where to look first — `/loopthink:connect` has the runbook.
-
-## Security and data handling
-
-- **Authentication.** OAuth 2.0 with PKCE and dynamic client registration. You
-  sign in at `mcp.eu.loopthink.ai`; Claude Code never sees your credentials.
-  Tokens are short-lived, scoped to a single workspace, and re-validate your
-  permissions on every refresh — a revoked grant takes effect within one token
-  lifetime.
-- **Least privilege.** Claude sees only the tools your member group was granted,
-  optionally narrowed to a subset per group.
-- **Masking.** Field-level masking rules run server-side, before results are
-  returned. Masked values never reach the model, and the bundled skills instruct
-  Claude not to attempt to route around them.
-- **Read-only by default.** Tools are read-only unless a workspace admin
-  explicitly enabled writes.
-- **Data residency.** Loopthink runs in the AWS European Sovereign Cloud — EU
-  region, EU operations, EU personnel.
-- **No local execution.** This plugin ships no binaries and runs no code on your
-  machine. It contributes one remote MCP endpoint, three skills, and one subagent
-  definition. Nothing here reads or writes outside the plugin directory.
-
-The `loopthink:data-analyst` subagent is restricted to `Read`, `Write`, and the
-`loopthink` MCP tools — it has no shell access.
-
-Privacy policy: <https://www.loopthink.ai/privacy-policy>
+Each product plugin is one remote MCP connector with a fixed tool list and a
+`get-started` skill. None of them ships binaries or runs code on your machine.
 
 ## Development
 
-Run against a local checkout without installing:
-
 ```bash
-claude --plugin-dir ./claude-plugin
+claude --plugin-dir ./plugins/loopthink
 ```
 
-Validate before pushing:
-
 ```bash
-claude plugin validate . --strict
+claude plugin validate ./plugins/loopthink
 ```
-
-To point the connector at a different environment (a staging workspace, or a
-regional deployment other than the EU one), edit the `url` in `.mcp.json`.
 
 ## Support
 
-- Setup guide — <https://www.loopthink.ai/connect-claude/>
-- Issues — <https://github.com/loopthink/claude-plugin/issues>
-- Imprint and contact — <https://www.loopthink.ai/imprint>
+- Website: <https://www.loopthink.ai>
+- Issues: <https://github.com/loopthink/claude-plugin/issues>
+- Privacy policy: <https://www.loopthink.ai/privacy-policy>
 
 ## License
 
-MIT — see [LICENSE](LICENSE). The license covers this plugin's contents. Use of
-the Loopthink service itself is governed by your Loopthink agreement.
+MIT, see [LICENSE](LICENSE). The license covers the plugins' contents. Use of
+the Loopthink service is governed by your Loopthink agreement.

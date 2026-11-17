@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
+  "name": "loopthink-shopware",
+  "displayName": "Shopware by Loopthink",
+  "version": "0.1.0",
+  "description": "Ask about the orders, customers, products and stock of your Shopware 6 shop in plain language. Read-only unless you allow more.",
+  "author": {
+    "name": "Loopthink (TechnologyCircle GmbH)",
+    "email": "info@technologycircle.io",
+    "url": "https://www.loopthink.ai"
+  },
+  "homepage": "https://www.loopthink.ai/connect/shopware-6",
+  "repository": "https://github.com/loopthink/claude-plugin",
+  "license": "MIT",
+  "keywords": [
+    "shopware",
+    "shopware-6",
+    "ecommerce",
+    "online-shop",
+    "orders",
+    "bestellungen",
+    "customers",
+    "products",
+    "stock",
+    "promotions",
+    "order-status",
+    "read-only-by-default"
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
+  "name": "loopthink-google-analytics",
+  "displayName": "Google Analytics by Loopthink",
+  "version": "0.1.1",
+  "description": "Ask GA4 in plain language. Sessions, conversions and landing pages. Read-only, no API key.",
+  "author": {
+    "name": "Loopthink (TechnologyCircle GmbH)",
+    "email": "info@technologycircle.io",
+    "url": "https://www.loopthink.ai"
+  },
+  "homepage": "https://www.loopthink.ai/connect/google-analytics",
+  "repository": "https://github.com/loopthink/claude-plugin",
+  "license": "MIT",
+  "keywords": [
+    "google-analytics",
+    "ga4",
+    "analytics",
+    "web-analytics",
+    "sessions",
+    "users",
+    "conversions",
+    "landing-pages",
+    "traffic-sources",
+    "realtime",
+    "read-only"
+  ]
+}

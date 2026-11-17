@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
+  "name": "loopthink-mssql",
+  "displayName": "SQL Server by Loopthink",
+  "version": "0.1.0",
+  "description": "Ask your SQL Server database questions in plain language. Read-only unless you allow changes, with every statement logged.",
+  "author": {
+    "name": "Loopthink (TechnologyCircle GmbH)",
+    "email": "info@technologycircle.io",
+    "url": "https://www.loopthink.ai"
+  },
+  "homepage": "https://www.loopthink.ai/connect/mssql",
+  "repository": "https://github.com/loopthink/claude-plugin",
+  "license": "MIT",
+  "keywords": [
+    "sql-server",
+    "mssql",
+    "microsoft-sql-server",
+    "azure-sql",
+    "t-sql",
+    "sql",
+    "database",
+    "analytics",
+    "reporting",
+    "business-intelligence",
+    "read-only-by-default",
+    "text-to-sql",
+    "data-analysis"
+  ]
+}

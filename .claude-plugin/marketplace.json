@@ -1,7 +1,7 @@
 {
   "$schema": "https://json.schemastore.org/claude-code-plugin-marketplace.json",
   "name": "loopthink-ai",
-  "description": "Plugins published by Loopthink — the sovereign MCP control plane.",
+  "description": "Plugins published by Loopthink, the AI Gateway for teams.",
   "owner": {
     "name": "Loopthink (TechnologyCircle GmbH)",
     "email": "info@technologycircle.io",
@@ -10,9 +10,171 @@
   "plugins": [
     {
       "name": "loopthink",
-      "source": "./",
+      "source": "./plugins/loopthink",
       "category": "data",
-      "tags": ["mcp", "database", "crm", "governance", "eu"]
+      "tags": [
+        "ai-gateway",
+        "mcp",
+        "database",
+        "governance",
+        "eu"
+      ]
+    },
+    {
+      "name": "loopthink-search-console",
+      "source": "./plugins/loopthink-search-console",
+      "category": "marketing",
+      "tags": [
+        "google-search-console",
+        "search-console",
+        "gsc",
+        "seo",
+        "search-analytics"
+      ]
+    },
+    {
+      "name": "loopthink-google-ads",
+      "source": "./plugins/loopthink-google-ads",
+      "category": "marketing",
+      "tags": [
+        "google-ads",
+        "google-ads-reporting",
+        "adwords",
+        "ppc",
+        "sem"
+      ]
+    },
+    {
+      "name": "loopthink-google-analytics",
+      "source": "./plugins/loopthink-google-analytics",
+      "category": "marketing",
+      "tags": [
+        "google-analytics",
+        "ga4",
+        "analytics",
+        "web-analytics",
+        "sessions"
+      ]
+    },
+    {
+      "name": "loopthink-sftp",
+      "source": "./plugins/loopthink-sftp",
+      "category": "developer-tools",
+      "tags": [
+        "sftp",
+        "ssh-file-transfer",
+        "file-transfer",
+        "files",
+        "csv"
+      ]
+    },
+    {
+      "name": "loopthink-ssh",
+      "source": "./plugins/loopthink-ssh",
+      "category": "developer-tools",
+      "tags": [
+        "ssh",
+        "linux",
+        "server-monitoring",
+        "devops",
+        "sysadmin"
+      ]
+    },
+    {
+      "name": "loopthink-postgres",
+      "source": "./plugins/loopthink-postgres",
+      "category": "data",
+      "tags": [
+        "postgres",
+        "postgresql",
+        "sql",
+        "database",
+        "analytics"
+      ]
+    },
+    {
+      "name": "loopthink-mysql",
+      "source": "./plugins/loopthink-mysql",
+      "category": "data",
+      "tags": [
+        "mysql",
+        "mariadb",
+        "sql",
+        "database",
+        "analytics"
+      ]
+    },
+    {
+      "name": "loopthink-mssql",
+      "source": "./plugins/loopthink-mssql",
+      "category": "data",
+      "tags": [
+        "sql-server",
+        "mssql",
+        "microsoft-sql-server",
+        "azure-sql",
+        "t-sql"
+      ]
+    },
+    {
+      "name": "loopthink-s3",
+      "source": "./plugins/loopthink-s3",
+      "category": "developer-tools",
+      "tags": [
+        "s3",
+        "amazon-s3",
+        "aws",
+        "object-storage",
+        "bucket"
+      ]
+    },
+    {
+      "name": "loopthink-lexware-office",
+      "source": "./plugins/loopthink-lexware-office",
+      "category": "productivity",
+      "tags": [
+        "lexware-office",
+        "lexoffice",
+        "lexware",
+        "accounting",
+        "buchhaltung"
+      ]
+    },
+    {
+      "name": "loopthink-sevdesk",
+      "source": "./plugins/loopthink-sevdesk",
+      "category": "productivity",
+      "tags": [
+        "sevdesk",
+        "accounting",
+        "buchhaltung",
+        "invoices",
+        "rechnungen"
+      ]
+    },
+    {
+      "name": "loopthink-odoo",
+      "source": "./plugins/loopthink-odoo",
+      "category": "productivity",
+      "tags": [
+        "odoo",
+        "erp",
+        "crm",
+        "sales-orders",
+        "invoices"
+      ]
+    },
+    {
+      "name": "loopthink-shopware",
+      "source": "./plugins/loopthink-shopware",
+      "category": "productivity",
+      "tags": [
+        "shopware",
+        "shopware-6",
+        "ecommerce",
+        "online-shop",
+        "orders"
+      ]
     }
   ]
 }

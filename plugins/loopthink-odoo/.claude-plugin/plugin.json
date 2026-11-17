@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
+  "name": "loopthink-odoo",
+  "displayName": "Odoo by Loopthink",
+  "version": "0.1.0",
+  "description": "Ask about the contacts, sales, invoices, stock, CRM and projects in your Odoo database in plain language. Read-only unless you allow more. Odoo 19 and newer.",
+  "author": {
+    "name": "Loopthink (TechnologyCircle GmbH)",
+    "email": "info@technologycircle.io",
+    "url": "https://www.loopthink.ai"
+  },
+  "homepage": "https://www.loopthink.ai/connect/odoo",
+  "repository": "https://github.com/loopthink/claude-plugin",
+  "license": "MIT",
+  "keywords": [
+    "odoo",
+    "erp",
+    "crm",
+    "sales-orders",
+    "invoices",
+    "inventory",
+    "stock",
+    "purchase",
+    "projects",
+    "timesheets",
+    "open-source-erp",
+    "read-only-by-default"
+  ]
+}

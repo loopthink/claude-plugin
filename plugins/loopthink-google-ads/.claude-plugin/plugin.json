@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
+  "name": "loopthink-google-ads",
+  "displayName": "Google Ads by Loopthink",
+  "version": "0.1.1",
+  "description": "Ask Google Ads in plain language. Campaigns, keywords and costs. No API key, no setup.",
+  "author": {
+    "name": "Loopthink (TechnologyCircle GmbH)",
+    "email": "info@technologycircle.io",
+    "url": "https://www.loopthink.ai"
+  },
+  "homepage": "https://www.loopthink.ai/connect/google-ads",
+  "repository": "https://github.com/loopthink/claude-plugin",
+  "license": "MIT",
+  "keywords": [
+    "google-ads",
+    "google-ads-reporting",
+    "adwords",
+    "ppc",
+    "sem",
+    "paid-search",
+    "campaigns",
+    "keywords",
+    "search-terms",
+    "negative-keywords",
+    "campaign-management"
+  ]
+}

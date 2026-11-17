@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
+  "name": "loopthink-lexware-office",
+  "displayName": "Lexware Office by Loopthink",
+  "version": "0.1.0",
+  "description": "Ask about the invoices, quotations, vouchers, contacts and payments in your Lexware Office account in plain language. Read-only unless you allow more.",
+  "author": {
+    "name": "Loopthink (TechnologyCircle GmbH)",
+    "email": "info@technologycircle.io",
+    "url": "https://www.loopthink.ai"
+  },
+  "homepage": "https://www.loopthink.ai/connect/lexware-office",
+  "repository": "https://github.com/loopthink/claude-plugin",
+  "license": "MIT",
+  "keywords": [
+    "lexware-office",
+    "lexoffice",
+    "lexware",
+    "accounting",
+    "buchhaltung",
+    "invoices",
+    "rechnungen",
+    "vouchers",
+    "belege",
+    "quotations",
+    "contacts",
+    "open-items",
+    "read-only-by-default"
+  ]
+}

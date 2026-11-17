@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "ssh": {
+      "type": "http",
+      "url": "https://mcp.eu.loopthink.ai/chatgpt/ssh"
+    }
+  }
+}

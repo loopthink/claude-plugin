@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
+  "name": "loopthink-search-console",
+  "displayName": "Google Search Console by Loopthink",
+  "version": "0.1.1",
+  "description": "Ask Google Search Console in plain language. Queries, pages, clicks and rankings. Read-only, no API key.",
+  "author": {
+    "name": "Loopthink (TechnologyCircle GmbH)",
+    "email": "info@technologycircle.io",
+    "url": "https://www.loopthink.ai"
+  },
+  "homepage": "https://www.loopthink.ai/connect/google-search-console",
+  "repository": "https://github.com/loopthink/claude-plugin",
+  "license": "MIT",
+  "keywords": [
+    "google-search-console",
+    "search-console",
+    "gsc",
+    "seo",
+    "search-analytics",
+    "organic-search",
+    "rankings",
+    "keywords",
+    "queries",
+    "clicks",
+    "impressions",
+    "sitemaps",
+    "read-only"
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
+  "name": "loopthink",
+  "displayName": "Loopthink",
+  "version": "0.2.0",
+  "description": "One governed connector for the systems your team runs: Google Ads, Search Console, GA4, PostgreSQL, HubSpot, Stripe, your own REST APIs and any MCP server. Claude sees exactly the tools your workspace granted you, with field-level masking applied server-side.",
+  "author": {
+    "name": "Loopthink (TechnologyCircle GmbH)",
+    "email": "info@technologycircle.io",
+    "url": "https://www.loopthink.ai"
+  },
+  "homepage": "https://www.loopthink.ai/connect/claude",
+  "repository": "https://github.com/loopthink/claude-plugin",
+  "license": "MIT",
+  "keywords": [
+    "loopthink",
+    "ai-gateway",
+    "mcp-gateway",
+    "google-ads",
+    "google-search-console",
+    "ga4",
+    "postgres",
+    "hubspot",
+    "stripe",
+    "rest-api",
+    "data-masking",
+    "eu-data-residency"
+  ]
+}

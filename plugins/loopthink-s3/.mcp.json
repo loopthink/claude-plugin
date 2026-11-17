@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "s3": {
+      "type": "http",
+      "url": "https://mcp.eu.loopthink.ai/chatgpt/s3"
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "google-analytics": {
+      "type": "http",
+      "url": "https://mcp.eu.loopthink.ai/chatgpt/google-analytics"
+    }
+  }
+}

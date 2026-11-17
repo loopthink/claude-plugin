@@ -18,5 +18,13 @@ jobs:
       - name: Install Claude Code
         run: npm install -g @anthropic-ai/claude-code
 
-      - name: Validate plugin manifest and structure
+      - name: Validate the marketplace manifest
         run: claude plugin validate . --strict
+
+      - name: Validate every plugin
+        run: |
+          for dir in plugins/*/; do
+            echo "::group::$dir"
+            claude plugin validate "$dir" --strict
+            echo "::endgroup::"
+          done

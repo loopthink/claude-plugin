@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
+  "name": "loopthink-s3",
+  "displayName": "S3 by Loopthink",
+  "version": "0.1.0",
+  "description": "Browse and read the objects in your S3 bucket in plain language. Amazon S3 and S3-compatible storage. Uploads only where you allow them.",
+  "author": {
+    "name": "Loopthink (TechnologyCircle GmbH)",
+    "email": "info@technologycircle.io",
+    "url": "https://www.loopthink.ai"
+  },
+  "homepage": "https://www.loopthink.ai/connect/s3",
+  "repository": "https://github.com/loopthink/claude-plugin",
+  "license": "MIT",
+  "keywords": [
+    "s3",
+    "amazon-s3",
+    "aws",
+    "object-storage",
+    "bucket",
+    "s3-compatible",
+    "hetzner",
+    "wasabi",
+    "cloudflare-r2",
+    "files",
+    "csv",
+    "json",
+    "exports",
+    "read-only-by-default"
+  ]
+}

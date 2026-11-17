@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
+  "name": "loopthink-ssh",
+  "displayName": "SSH by Loopthink",
+  "version": "0.1.0",
+  "description": "Check and run your Linux servers in plain language. Disk, memory, services, logs and any command.",
+  "author": {
+    "name": "Loopthink (TechnologyCircle GmbH)",
+    "email": "info@technologycircle.io",
+    "url": "https://www.loopthink.ai"
+  },
+  "homepage": "https://www.loopthink.ai/connect/ssh",
+  "repository": "https://github.com/loopthink/claude-plugin",
+  "license": "MIT",
+  "keywords": [
+    "ssh",
+    "linux",
+    "server-monitoring",
+    "devops",
+    "sysadmin",
+    "logs",
+    "systemd",
+    "disk-usage",
+    "uptime",
+    "shell"
+  ]
+}

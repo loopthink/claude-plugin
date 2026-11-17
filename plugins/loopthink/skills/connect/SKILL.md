@@ -50,7 +50,7 @@ Diagnose in this order:
    of waiting out the current token.
 
 Only after all four come back clean is it worth suspecting a server-side problem.
-Point the user at <https://www.loopthink.ai/connect-claude/> and the workspace
+Point the user at <https://www.loopthink.ai/connect/claude> and the workspace
 owner in that case.
 
 ## Things that are not bugs
