@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
+  "name": "loopthink-imap",
+  "displayName": "IMAP by Loopthink",
+  "version": "0.1.0",
+  "description": "Let your whole team ask a shared mailbox in plain language, without handing out the mailbox password. Read-only by default, masked and logged by Loopthink.",
+  "author": {
+    "name": "Loopthink (TechnologyCircle GmbH)",
+    "email": "info@technologycircle.io",
+    "url": "https://www.loopthink.ai"
+  },
+  "homepage": "https://www.loopthink.ai/connect/imap",
+  "repository": "https://github.com/loopthink/claude-plugin",
+  "license": "MIT",
+  "keywords": [
+    "imap",
+    "email",
+    "e-mail",
+    "mailbox",
+    "inbox",
+    "shared-mailbox",
+    "gmail",
+    "microsoft-365",
+    "outlook",
+    "ionos",
+    "strato",
+    "attachments",
+    "invoices",
+    "support-inbox",
+    "read-only-by-default"
+  ]
+}

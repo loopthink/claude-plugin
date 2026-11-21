@@ -39,6 +39,7 @@ server and choose **Authenticate**.
 | [sevDesk by Loopthink](plugins/loopthink-sevdesk) | `loopthink-sevdesk` | Ask about the invoices, orders, vouchers, contacts and bank transactions in your sevDesk account in plain language. Read-only unless you allow more. |
 | [Odoo by Loopthink](plugins/loopthink-odoo) | `loopthink-odoo` | Ask about the contacts, sales, invoices, stock, CRM and projects in your Odoo database in plain language. Read-only unless you allow more. Odoo 19 and newer. |
 | [Shopware by Loopthink](plugins/loopthink-shopware) | `loopthink-shopware` | Ask about the orders, customers, products and stock of your Shopware 6 shop in plain language. Read-only unless you allow more. |
+| [IMAP by Loopthink](plugins/loopthink-imap) | `loopthink-imap` | Let your whole team ask a shared mailbox in plain language, without handing out the mailbox password. Read-only by default, masked and logged by Loopthink. |
 
 Each product plugin is one remote MCP connector with a fixed tool list and a
 `get-started` skill. None of them ships binaries or runs code on your machine.

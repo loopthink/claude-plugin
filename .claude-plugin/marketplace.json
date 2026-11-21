@@ -175,6 +175,18 @@
         "online-shop",
         "orders"
       ]
+    },
+    {
+      "name": "loopthink-imap",
+      "source": "./plugins/loopthink-imap",
+      "category": "productivity",
+      "tags": [
+        "imap",
+        "email",
+        "e-mail",
+        "mailbox",
+        "inbox"
+      ]
     }
   ]
 }
