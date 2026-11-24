@@ -1,8 +1,18 @@
-# SFTP by Loopthink
+# Loopthink for SFTP
 
-Browse and read the files on your SFTP server in plain language. Uploads only where you allow them.
+Let your whole team ask about the files on your SFTP server in plain language, without handing out the login. Confined to one folder, read-only by default and logged by Loopthink.
 
-Browse and read the files on your SFTP server in plain language. Uploads only where you allow them.
+Let your whole team ask about the files on your SFTP server in plain language, without handing out the login. Confined to one folder, read-only by default and logged by Loopthink.
+
+Claude lists the folders, reads the files and answers from their content. Loopthink sits between the two and enforces the rules on every call.
+
+What Loopthink adds on top of the server:
+- Confinement. The connection is locked to one root folder. Nothing above it can be listed, read or written, whatever the SFTP user itself could reach.
+- Team access without a shared login. The server is connected once. Every person signs in with their own account, and each member group is granted reading and writing separately.
+- An audit log. Every call is recorded with who ran it.
+- Guarded changes. Writing, moving and deleting are separate tools that stay off until an admin allows them. Then Claude asks before each one, and an existing file is only replaced when you say so.
+- A pinned host key. The key is pinned on the first connection, and a changed key blocks every call until an admin confirms it.
+- Limits. Text files are read up to 2 MB, uploads go up to 5 MB.
 
 What you can ask:
 - Which files arrived in the inbound folder today?
@@ -16,17 +26,9 @@ How it works:
 2. Right after sign-in, a form on our page asks for your SFTP server: host, user name, a password or private key, and whether changes are allowed. We log in once to test it. Credentials are entered there, never in the chat.
 3. Ask in Claude. Nothing needs refreshing after you connect.
 
-Confined and read-only by default:
-- The server is confined to one root folder. Nothing above it can be read or written.
-- Listing and reading work right away. Writing, moving and deleting stay off unless you tick "Also allow changes" on the form, or an admin allows them later.
-- Claude asks you before a file is written, moved or deleted. An existing file is only replaced when you say so.
-- The server's host key is pinned on the first connection. A changed key blocks every call until an admin confirms it.
-- Text files are read up to 2 MB, uploads go up to 5 MB.
-
-Built for teams:
-- Every person signs in with their own account.
-- Access is granted per member group, reading and writing separately.
-- Every call is logged with who ran it.
+Good to know:
+- The password or key is stored encrypted and never shown again.
+- A workspace admin can change the root folder, group access and the permission to write at any time in the Loopthink web app.
 
 ## What it can do
 
@@ -34,8 +36,9 @@ Built for teams:
 - List a folder with name, type, size and last modified time
 - Read text files such as CSV, XML, JSON, MT940 and logs
 - Check size, date and permissions of a file without reading it
+- Keep every call inside the root folder the workspace confined the server to
+- Grant access per member group, reading and writing separately, and log every call
 - Write, move or delete a file, only where the workspace switched that on
-- Stays inside the root folder the server is confined to
 
 ## Try asking
 
@@ -45,7 +48,7 @@ Built for teams:
 
 ## Install
 
-In Claude, add **SFTP by Loopthink** from the directory. In Claude Code:
+In Claude, add **Loopthink for SFTP** from the directory. In Claude Code:
 
 ```bash
 claude plugin marketplace add loopthink/claude-plugin
@@ -63,7 +66,7 @@ walks through connecting and the first question.
 
 | Component | Name | What it does |
 | --- | --- | --- |
-| MCP server | `sftp` | Remote connector at `https://mcp.eu.loopthink.ai/chatgpt/sftp`, OAuth 2.0 with PKCE and dynamic client registration |
+| MCP server | `sftp` | Remote connector at `https://mcp.eu.loopthink.ai/mcp/sftp`, OAuth 2.0 with PKCE and dynamic client registration |
 | Skill | `/loopthink-sftp:get-started` | Connect the system, find out why a tool returns nothing, and how to ask |
 
 The plugin ships no binaries and runs no code on your machine. It contributes

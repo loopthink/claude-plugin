@@ -1,8 +1,8 @@
 {
   "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
   "name": "loopthink-ssh",
-  "displayName": "SSH by Loopthink",
-  "version": "0.1.0",
+  "displayName": "Loopthink for SSH",
+  "version": "0.1.1",
   "description": "Check and run your Linux servers in plain language. Disk, memory, services, logs and any command.",
   "author": {
     "name": "Loopthink (TechnologyCircle GmbH)",

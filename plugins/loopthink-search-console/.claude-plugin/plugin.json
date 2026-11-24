@@ -1,7 +1,7 @@
 {
   "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
   "name": "loopthink-search-console",
-  "displayName": "Google Search Console by Loopthink",
+  "displayName": "Loopthink for Google Search Console",
   "version": "0.1.1",
   "description": "Ask Google Search Console in plain language. Queries, pages, clicks and rankings. Read-only, no API key.",
   "author": {

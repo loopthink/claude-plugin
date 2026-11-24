@@ -1,4 +1,4 @@
-# SSH by Loopthink
+# Loopthink for SSH
 
 Check and run your Linux servers in plain language. Disk, memory, services, logs and any command.
 
@@ -47,7 +47,7 @@ Built for teams:
 
 ## Install
 
-In Claude, add **SSH by Loopthink** from the directory. In Claude Code:
+In Claude, add **Loopthink for SSH** from the directory. In Claude Code:
 
 ```bash
 claude plugin marketplace add loopthink/claude-plugin
@@ -65,7 +65,7 @@ walks through connecting and the first question.
 
 | Component | Name | What it does |
 | --- | --- | --- |
-| MCP server | `ssh` | Remote connector at `https://mcp.eu.loopthink.ai/chatgpt/ssh`, OAuth 2.0 with PKCE and dynamic client registration |
+| MCP server | `ssh` | Remote connector at `https://mcp.eu.loopthink.ai/mcp/ssh`, OAuth 2.0 with PKCE and dynamic client registration |
 | Skill | `/loopthink-ssh:get-started` | Connect the system, find out why a tool returns nothing, and how to ask |
 
 The plugin ships no binaries and runs no code on your machine. It contributes

@@ -1,9 +1,9 @@
 ---
 name: get-started
-description: Set up Google Analytics by Loopthink or work out why it returns no data. Use when the user has just added the app, asks what it can do, gets a "connect it at …" message, or cannot find one of their GA4 properties.
+description: Set up Loopthink for Google Analytics or work out why it returns no data. Use when the user has just added the app, asks what it can do, gets a "connect it at …" message, or cannot find one of their GA4 properties.
 ---
 
-# Get started with Google Analytics by Loopthink
+# Get started with Loopthink for Google Analytics
 
 The app reads the GA4 properties the user connected in Loopthink, and only the
 ones their member group was granted. The tools are always the same:

@@ -1,9 +1,9 @@
 ---
 name: get-started
-description: Set up Google Ads by Loopthink, work out why it returns no data, or make a change safely. Use when the user has just added the app, asks what it can do, gets a "connect it at …" or "changes are not allowed" message, cannot find one of their ad accounts, or asks to change a campaign, budget or keyword.
+description: Set up Loopthink for Google Ads, work out why it returns no data, or make a change safely. Use when the user has just added the app, asks what it can do, gets a "connect it at …" or "changes are not allowed" message, cannot find one of their ad accounts, or asks to change a campaign, budget or keyword.
 ---
 
-# Get started with Google Ads by Loopthink
+# Get started with Loopthink for Google Ads
 
 The app reads the Google Ads accounts the user connected in Loopthink, and only
 the ones their member group was granted. The tools are always the same:

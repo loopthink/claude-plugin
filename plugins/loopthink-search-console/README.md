@@ -1,4 +1,4 @@
-# Google Search Console by Loopthink
+# Loopthink for Google Search Console
 
 Ask Google Search Console in plain language. Queries, pages, clicks and rankings. Read-only, no API key.
 
@@ -40,7 +40,7 @@ Built for teams:
 
 ## Install
 
-In Claude, add **Google Search Console by Loopthink** from the directory. In Claude Code:
+In Claude, add **Loopthink for Google Search Console** from the directory. In Claude Code:
 
 ```bash
 claude plugin marketplace add loopthink/claude-plugin
@@ -58,7 +58,7 @@ walks through connecting and the first question.
 
 | Component | Name | What it does |
 | --- | --- | --- |
-| MCP server | `google-search-console` | Remote connector at `https://mcp.eu.loopthink.ai/chatgpt/google-search-console`, OAuth 2.0 with PKCE and dynamic client registration |
+| MCP server | `google-search-console` | Remote connector at `https://mcp.eu.loopthink.ai/mcp/google-search-console`, OAuth 2.0 with PKCE and dynamic client registration |
 | Skill | `/loopthink-search-console:get-started` | Connect the system, find out why a tool returns nothing, and how to ask |
 
 The plugin ships no binaries and runs no code on your machine. It contributes

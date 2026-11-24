@@ -1,7 +1,7 @@
 {
   "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
   "name": "loopthink-mssql",
-  "displayName": "SQL Server by Loopthink",
+  "displayName": "Loopthink for SQL Server",
   "version": "0.1.0",
   "description": "Ask your SQL Server database questions in plain language. Read-only unless you allow changes, with every statement logged.",
   "author": {

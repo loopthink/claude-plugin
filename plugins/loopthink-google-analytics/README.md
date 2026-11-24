@@ -1,4 +1,4 @@
-# Google Analytics by Loopthink
+# Loopthink for Google Analytics
 
 Ask GA4 in plain language. Sessions, conversions and landing pages. Read-only, no API key.
 
@@ -40,7 +40,7 @@ Built for teams:
 
 ## Install
 
-In Claude, add **Google Analytics by Loopthink** from the directory. In Claude Code:
+In Claude, add **Loopthink for Google Analytics** from the directory. In Claude Code:
 
 ```bash
 claude plugin marketplace add loopthink/claude-plugin
@@ -58,7 +58,7 @@ walks through connecting and the first question.
 
 | Component | Name | What it does |
 | --- | --- | --- |
-| MCP server | `google-analytics` | Remote connector at `https://mcp.eu.loopthink.ai/chatgpt/google-analytics`, OAuth 2.0 with PKCE and dynamic client registration |
+| MCP server | `google-analytics` | Remote connector at `https://mcp.eu.loopthink.ai/mcp/google-analytics`, OAuth 2.0 with PKCE and dynamic client registration |
 | Skill | `/loopthink-google-analytics:get-started` | Connect the system, find out why a tool returns nothing, and how to ask |
 
 The plugin ships no binaries and runs no code on your machine. It contributes

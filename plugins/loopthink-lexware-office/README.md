@@ -1,4 +1,4 @@
-# Lexware Office by Loopthink
+# Loopthink for Lexware Office
 
 Ask about the invoices, quotations, vouchers, contacts and payments in your Lexware Office account in plain language. Read-only unless you allow more.
 
@@ -45,7 +45,7 @@ Built for teams:
 
 ## Install
 
-In Claude, add **Lexware Office by Loopthink** from the directory. In Claude Code:
+In Claude, add **Loopthink for Lexware Office** from the directory. In Claude Code:
 
 ```bash
 claude plugin marketplace add loopthink/claude-plugin
@@ -63,7 +63,7 @@ walks through connecting and the first question.
 
 | Component | Name | What it does |
 | --- | --- | --- |
-| MCP server | `lexware-office` | Remote connector at `https://mcp.eu.loopthink.ai/chatgpt/lexware-office`, OAuth 2.0 with PKCE and dynamic client registration |
+| MCP server | `lexware-office` | Remote connector at `https://mcp.eu.loopthink.ai/mcp/lexware-office`, OAuth 2.0 with PKCE and dynamic client registration |
 | Skill | `/loopthink-lexware-office:get-started` | Connect the system, find out why a tool returns nothing, and how to ask |
 
 The plugin ships no binaries and runs no code on your machine. It contributes

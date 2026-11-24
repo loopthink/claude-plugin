@@ -1,9 +1,9 @@
 ---
 name: get-started
-description: Set up SQL Server by Loopthink or work out why it returns no rows. Use when the user has just added the app, asks what it can do, gets a "connect it at …" message, or a tool says it is not switched on.
+description: Set up Loopthink for SQL Server or work out why it returns no rows. Use when the user has just added the app, asks what it can do, gets a "connect it at …" message, or a tool says it is not switched on.
 ---
 
-# Get started with SQL Server by Loopthink
+# Get started with Loopthink for SQL Server
 
 The app reads the SQL Server databases the user connected in Loopthink, and only
 the ones their member group was granted. The tools are always the same:

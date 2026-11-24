@@ -1,7 +1,7 @@
 {
   "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
   "name": "loopthink-mysql",
-  "displayName": "MySQL by Loopthink",
+  "displayName": "Loopthink for MySQL",
   "version": "0.1.0",
   "description": "Ask your MySQL database questions in plain language. Read-only unless you allow changes, with every statement logged.",
   "author": {

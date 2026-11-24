@@ -1,4 +1,4 @@
-# Shopware by Loopthink
+# Loopthink for Shopware
 
 Ask about the orders, customers, products and stock of your Shopware 6 shop in plain language. Read-only unless you allow more.
 
@@ -46,7 +46,7 @@ Built for teams:
 
 ## Install
 
-In Claude, add **Shopware by Loopthink** from the directory. In Claude Code:
+In Claude, add **Loopthink for Shopware** from the directory. In Claude Code:
 
 ```bash
 claude plugin marketplace add loopthink/claude-plugin
@@ -64,7 +64,7 @@ walks through connecting and the first question.
 
 | Component | Name | What it does |
 | --- | --- | --- |
-| MCP server | `shopware` | Remote connector at `https://mcp.eu.loopthink.ai/chatgpt/shopware`, OAuth 2.0 with PKCE and dynamic client registration |
+| MCP server | `shopware` | Remote connector at `https://mcp.eu.loopthink.ai/mcp/shopware`, OAuth 2.0 with PKCE and dynamic client registration |
 | Skill | `/loopthink-shopware:get-started` | Connect the system, find out why a tool returns nothing, and how to ask |
 
 The plugin ships no binaries and runs no code on your machine. It contributes

@@ -2,7 +2,7 @@
   "mcpServers": {
     "google-search-console": {
       "type": "http",
-      "url": "https://mcp.eu.loopthink.ai/chatgpt/google-search-console"
+      "url": "https://mcp.eu.loopthink.ai/mcp/google-search-console"
     }
   }
 }

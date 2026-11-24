@@ -1,9 +1,9 @@
 ---
 name: get-started
-description: Set up SSH by Loopthink or work out why it returns nothing. Use when the user has just added the app, asks what it can do, gets a "connect it at …" message, or asks for a command the fixed tools do not cover.
+description: Set up Loopthink for SSH or work out why it returns nothing. Use when the user has just added the app, asks what it can do, gets a "connect it at …" message, or asks for a command the fixed tools do not cover.
 ---
 
-# Get started with SSH by Loopthink
+# Get started with Loopthink for SSH
 
 The app checks the Linux servers the user connected in Loopthink, and only the
 ones their member group was granted. The tools are always the same. All but

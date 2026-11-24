@@ -1,7 +1,7 @@
 {
   "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
   "name": "loopthink-google-ads",
-  "displayName": "Google Ads by Loopthink",
+  "displayName": "Loopthink for Google Ads",
   "version": "0.1.1",
   "description": "Ask Google Ads in plain language. Campaigns, keywords and costs. No API key, no setup.",
   "author": {

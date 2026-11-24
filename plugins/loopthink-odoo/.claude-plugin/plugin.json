@@ -1,9 +1,9 @@
 {
   "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
   "name": "loopthink-odoo",
-  "displayName": "Odoo by Loopthink",
-  "version": "0.1.0",
-  "description": "Ask about the contacts, sales, invoices, stock, CRM and projects in your Odoo database in plain language. Read-only unless you allow more. Odoo 19 and newer.",
+  "displayName": "Loopthink for Odoo",
+  "version": "0.1.1",
+  "description": "Let your whole team ask your Odoo database in plain language, without giving everyone an Odoo login or an API key. Limited to the models you enable, read-only by default and logged by Loopthink. Odoo 19 and newer.",
   "author": {
     "name": "Loopthink (TechnologyCircle GmbH)",
     "email": "info@technologycircle.io",

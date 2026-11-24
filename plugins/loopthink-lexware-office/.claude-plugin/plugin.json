@@ -1,7 +1,7 @@
 {
   "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
   "name": "loopthink-lexware-office",
-  "displayName": "Lexware Office by Loopthink",
+  "displayName": "Loopthink for Lexware Office",
   "version": "0.1.0",
   "description": "Ask about the invoices, quotations, vouchers, contacts and payments in your Lexware Office account in plain language. Read-only unless you allow more.",
   "author": {

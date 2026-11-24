@@ -2,7 +2,7 @@
   "mcpServers": {
     "mssql": {
       "type": "http",
-      "url": "https://mcp.eu.loopthink.ai/chatgpt/mssql"
+      "url": "https://mcp.eu.loopthink.ai/mcp/mssql"
     }
   }
 }

@@ -2,7 +2,7 @@
   "mcpServers": {
     "google-ads": {
       "type": "http",
-      "url": "https://mcp.eu.loopthink.ai/chatgpt/google-ads"
+      "url": "https://mcp.eu.loopthink.ai/mcp/google-ads"
     }
   }
 }

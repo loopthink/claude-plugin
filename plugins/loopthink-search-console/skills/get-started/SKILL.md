@@ -1,9 +1,9 @@
 ---
 name: get-started
-description: Set up Google Search Console by Loopthink or work out why it returns no data. Use when the user has just added the app, asks what it can do, gets a "connect it at …" message, or cannot find one of their properties.
+description: Set up Loopthink for Google Search Console or work out why it returns no data. Use when the user has just added the app, asks what it can do, gets a "connect it at …" message, or cannot find one of their properties.
 ---
 
-# Get started with Google Search Console by Loopthink
+# Get started with Loopthink for Google Search Console
 
 The app reads the Search Console properties the user connected in Loopthink,
 and only the ones their member group was granted. The tools are always the same:

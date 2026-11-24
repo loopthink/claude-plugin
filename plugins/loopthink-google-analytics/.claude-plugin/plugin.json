@@ -1,7 +1,7 @@
 {
   "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
   "name": "loopthink-google-analytics",
-  "displayName": "Google Analytics by Loopthink",
+  "displayName": "Loopthink for Google Analytics",
   "version": "0.1.1",
   "description": "Ask GA4 in plain language. Sessions, conversions and landing pages. Read-only, no API key.",
   "author": {

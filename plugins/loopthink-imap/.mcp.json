@@ -2,7 +2,7 @@
   "mcpServers": {
     "imap": {
       "type": "http",
-      "url": "https://mcp.eu.loopthink.ai/chatgpt/imap"
+      "url": "https://mcp.eu.loopthink.ai/mcp/imap"
     }
   }
 }

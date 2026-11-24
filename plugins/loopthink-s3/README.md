@@ -1,8 +1,17 @@
-# S3 by Loopthink
+# Loopthink for S3
 
-Browse and read the objects in your S3 bucket in plain language. Amazon S3 and S3-compatible storage. Uploads only where you allow them.
+Let your whole team ask about the files in your S3 bucket in plain language, without handing out access keys. Confined to one bucket or folder, read-only by default and logged by Loopthink.
 
-Browse and read the objects in your S3 bucket in plain language. Amazon S3 and S3-compatible storage. Uploads only where you allow them.
+Let your whole team ask about the files in your S3 bucket in plain language, without handing out access keys. Confined to one bucket or folder, read-only by default and logged by Loopthink.
+
+Claude lists the folders, reads the objects and answers from their content. Loopthink sits between the two and enforces the rules on every call. Works with Amazon S3 and S3-compatible storage.
+
+What Loopthink adds on top of the bucket:
+- Confinement. One connection is one bucket, and it can be locked to a folder (prefix). Nothing outside it can be listed, read or written.
+- Team access without shared keys. The bucket is connected once. Every person signs in with their own account, and each member group is granted reading and writing separately.
+- An audit log. Every call is recorded with who ran it.
+- Guarded changes. Writing, copying, moving and deleting are separate tools that stay off until an admin allows them. Then Claude asks before each one, and an existing object is only replaced when you say so.
+- Limits. Text objects are read up to 2 MB, uploads go up to 5 MB. Binary objects are not read.
 
 What you can ask:
 - Which exports landed in the reports folder today?
@@ -16,21 +25,14 @@ How it works:
 2. Right after sign-in, a form on our page asks for your bucket: name, region, an access key ID and secret access key, and whether changes are allowed. We list the bucket once to test it. Credentials are entered there, never in the chat.
 3. Ask in Claude. Nothing needs refreshing after you connect.
 
-Confined and read-only by default:
-- One connection is one bucket. It can be confined to a folder (prefix); nothing outside it can be listed, read or written.
-- Listing and reading work right away. Writing, copying, moving and deleting stay off unless you tick "Also allow changes" on the form, or an admin allows them later.
-- Claude asks you before an object is written, copied, moved or deleted. An existing object is only replaced when you say so.
-- Use an IAM user whose policy only reaches this bucket. The setup steps on the form show the policy.
-- Text objects are read up to 2 MB, uploads go up to 5 MB. Binary objects are not read.
-
 Amazon S3 and compatible storage:
 - Works with Amazon S3 in every region.
 - Works with S3-compatible storage through its endpoint, such as Hetzner Object Storage, IONOS, Wasabi, Backblaze B2 and Cloudflare R2.
 
-Built for teams:
-- Every person signs in with their own account.
-- Access is granted per member group, reading and writing separately.
-- Every call is logged with who ran it.
+Good to know:
+- Use an IAM user whose policy only reaches this bucket. The setup steps on the form show the policy.
+- The secret access key is stored encrypted and never shown again.
+- A workspace admin can change the folder, group access and the permission to write at any time in the Loopthink web app.
 
 ## What it can do
 
@@ -38,8 +40,9 @@ Built for teams:
 - List a folder of the bucket with name, type, size and last modified time
 - Read text objects such as CSV, JSON, XML and logs
 - Check size, type and date of an object without reading it
+- Keep every call inside the bucket and folder the workspace confined the connection to
+- Grant access per member group, reading and writing separately, and log every call
 - Write, copy, move or delete an object, only where the workspace switched that on
-- Stays inside the bucket and the folder the connection is confined to
 
 ## Try asking
 
@@ -49,7 +52,7 @@ Built for teams:
 
 ## Install
 
-In Claude, add **S3 by Loopthink** from the directory. In Claude Code:
+In Claude, add **Loopthink for S3** from the directory. In Claude Code:
 
 ```bash
 claude plugin marketplace add loopthink/claude-plugin
@@ -67,7 +70,7 @@ walks through connecting and the first question.
 
 | Component | Name | What it does |
 | --- | --- | --- |
-| MCP server | `s3` | Remote connector at `https://mcp.eu.loopthink.ai/chatgpt/s3`, OAuth 2.0 with PKCE and dynamic client registration |
+| MCP server | `s3` | Remote connector at `https://mcp.eu.loopthink.ai/mcp/s3`, OAuth 2.0 with PKCE and dynamic client registration |
 | Skill | `/loopthink-s3:get-started` | Connect the system, find out why a tool returns nothing, and how to ask |
 
 The plugin ships no binaries and runs no code on your machine. It contributes

@@ -1,9 +1,9 @@
 {
   "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
   "name": "loopthink-sftp",
-  "displayName": "SFTP by Loopthink",
-  "version": "0.1.0",
-  "description": "Browse and read the files on your SFTP server in plain language. Uploads only where you allow them.",
+  "displayName": "Loopthink for SFTP",
+  "version": "0.1.1",
+  "description": "Let your whole team ask about the files on your SFTP server in plain language, without handing out the login. Confined to one folder, read-only by default and logged by Loopthink.",
   "author": {
     "name": "Loopthink (TechnologyCircle GmbH)",
     "email": "info@technologycircle.io",

@@ -1,9 +1,9 @@
 {
   "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
   "name": "loopthink-s3",
-  "displayName": "S3 by Loopthink",
-  "version": "0.1.0",
-  "description": "Browse and read the objects in your S3 bucket in plain language. Amazon S3 and S3-compatible storage. Uploads only where you allow them.",
+  "displayName": "Loopthink for S3",
+  "version": "0.1.1",
+  "description": "Let your whole team ask about the files in your S3 bucket in plain language, without handing out access keys. Confined to one bucket or folder, read-only by default and logged by Loopthink.",
   "author": {
     "name": "Loopthink (TechnologyCircle GmbH)",
     "email": "info@technologycircle.io",

@@ -1,9 +1,9 @@
 ---
 name: get-started
-description: Set up PostgreSQL by Loopthink or work out why it returns no rows. Use when the user has just added the app, asks what it can do, gets a "connect it at …" message, or a tool says it is not switched on.
+description: Set up Loopthink for PostgreSQL or work out why it returns no rows. Use when the user has just added the app, asks what it can do, gets a "connect it at …" message, or a tool says it is not switched on.
 ---
 
-# Get started with PostgreSQL by Loopthink
+# Get started with Loopthink for PostgreSQL
 
 The app reads the PostgreSQL databases the user connected in Loopthink, and only
 the ones their member group was granted. The tools are always the same:

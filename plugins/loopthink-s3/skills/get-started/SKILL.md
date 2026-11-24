@@ -1,9 +1,9 @@
 ---
 name: get-started
-description: Set up S3 by Loopthink or work out why it returns no objects. Use when the user has just added the app, asks what it can do, gets a "connect it at …" message, or a tool says it is not switched on.
+description: Set up Loopthink for S3 or work out why it returns no objects. Use when the user has just added the app, asks what it can do, gets a "connect it at …" message, or a tool says it is not switched on.
 ---
 
-# Get started with S3 by Loopthink
+# Get started with Loopthink for S3
 
 The app reads the S3 buckets the user connected in Loopthink, and only the
 ones their member group was granted. The tools are always the same:

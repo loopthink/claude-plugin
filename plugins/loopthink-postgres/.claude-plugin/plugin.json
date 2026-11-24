@@ -1,9 +1,9 @@
 {
   "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
   "name": "loopthink-postgres",
-  "displayName": "PostgreSQL by Loopthink",
-  "version": "0.1.0",
-  "description": "Ask your PostgreSQL database questions in plain language. Read-only unless you allow changes, with every statement logged.",
+  "displayName": "Loopthink for PostgreSQL",
+  "version": "0.1.1",
+  "description": "Let your whole team ask your PostgreSQL database in plain language, without handing out database passwords or SQL access. Guarded, masked and logged by Loopthink.",
   "author": {
     "name": "Loopthink (TechnologyCircle GmbH)",
     "email": "info@technologycircle.io",

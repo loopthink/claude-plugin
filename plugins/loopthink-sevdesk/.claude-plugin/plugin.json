@@ -1,8 +1,8 @@
 {
   "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
   "name": "loopthink-sevdesk",
-  "displayName": "sevDesk by Loopthink",
-  "version": "0.1.1",
+  "displayName": "Loopthink for sevDesk",
+  "version": "0.1.2",
   "description": "Ask about the invoices, orders, vouchers, contacts and bank transactions in your sevDesk account in plain language. Read-only unless you allow more.",
   "author": {
     "name": "Loopthink (TechnologyCircle GmbH)",

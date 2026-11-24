@@ -1,7 +1,7 @@
 {
   "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
   "name": "loopthink-imap",
-  "displayName": "IMAP by Loopthink",
+  "displayName": "Loopthink for IMAP",
   "version": "0.1.0",
   "description": "Let your whole team ask a shared mailbox in plain language, without handing out the mailbox password. Read-only by default, masked and logged by Loopthink.",
   "author": {

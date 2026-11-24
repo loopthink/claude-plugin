@@ -1,4 +1,4 @@
-# MySQL by Loopthink
+# Loopthink for MySQL
 
 Ask your MySQL database questions in plain language. Read-only unless you allow changes, with every statement logged.
 
@@ -48,7 +48,7 @@ Built for teams:
 
 ## Install
 
-In Claude, add **MySQL by Loopthink** from the directory. In Claude Code:
+In Claude, add **Loopthink for MySQL** from the directory. In Claude Code:
 
 ```bash
 claude plugin marketplace add loopthink/claude-plugin
@@ -66,7 +66,7 @@ walks through connecting and the first question.
 
 | Component | Name | What it does |
 | --- | --- | --- |
-| MCP server | `mysql` | Remote connector at `https://mcp.eu.loopthink.ai/chatgpt/mysql`, OAuth 2.0 with PKCE and dynamic client registration |
+| MCP server | `mysql` | Remote connector at `https://mcp.eu.loopthink.ai/mcp/mysql`, OAuth 2.0 with PKCE and dynamic client registration |
 | Skill | `/loopthink-mysql:get-started` | Connect the system, find out why a tool returns nothing, and how to ask |
 
 The plugin ships no binaries and runs no code on your machine. It contributes

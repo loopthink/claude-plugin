@@ -1,4 +1,4 @@
-# Google Ads by Loopthink
+# Loopthink for Google Ads
 
 Ask Google Ads in plain language. Campaigns, keywords and costs. No API key, no setup.
 
@@ -49,7 +49,7 @@ Built for teams:
 
 ## Install
 
-In Claude, add **Google Ads by Loopthink** from the directory. In Claude Code:
+In Claude, add **Loopthink for Google Ads** from the directory. In Claude Code:
 
 ```bash
 claude plugin marketplace add loopthink/claude-plugin
@@ -67,7 +67,7 @@ walks through connecting and the first question.
 
 | Component | Name | What it does |
 | --- | --- | --- |
-| MCP server | `google-ads` | Remote connector at `https://mcp.eu.loopthink.ai/chatgpt/google-ads`, OAuth 2.0 with PKCE and dynamic client registration |
+| MCP server | `google-ads` | Remote connector at `https://mcp.eu.loopthink.ai/mcp/google-ads`, OAuth 2.0 with PKCE and dynamic client registration |
 | Skill | `/loopthink-google-ads:get-started` | Connect the system, find out why a tool returns nothing, and how to ask |
 
 The plugin ships no binaries and runs no code on your machine. It contributes

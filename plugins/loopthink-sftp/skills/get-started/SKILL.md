@@ -1,9 +1,9 @@
 ---
 name: get-started
-description: Set up SFTP by Loopthink or work out why it returns no files. Use when the user has just added the app, asks what it can do, gets a "connect it at …" message, or a file tool says it is not switched on.
+description: Set up Loopthink for SFTP or work out why it returns no files. Use when the user has just added the app, asks what it can do, gets a "connect it at …" message, or a file tool says it is not switched on.
 ---
 
-# Get started with SFTP by Loopthink
+# Get started with Loopthink for SFTP
 
 The app reads the SFTP servers the user connected in Loopthink, and only the
 ones their member group was granted. The tools are always the same:

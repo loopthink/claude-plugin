@@ -2,7 +2,7 @@
   "mcpServers": {
     "odoo": {
       "type": "http",
-      "url": "https://mcp.eu.loopthink.ai/chatgpt/odoo"
+      "url": "https://mcp.eu.loopthink.ai/mcp/odoo"
     }
   }
 }

@@ -1,9 +1,9 @@
 ---
 name: get-started
-description: Set up Shopware by Loopthink or work out why it returns nothing. Use when the user has just added the app, asks what it can do, gets a "connect it at …" message, or a tool says it is not switched on.
+description: Set up Loopthink for Shopware or work out why it returns nothing. Use when the user has just added the app, asks what it can do, gets a "connect it at …" message, or a tool says it is not switched on.
 ---
 
-# Get started with Shopware by Loopthink
+# Get started with Loopthink for Shopware
 
 The app works with the Shopware account the user connected in Loopthink, and only
 where their member group was granted access. The tools are always the same:

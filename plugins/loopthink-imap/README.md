@@ -1,4 +1,4 @@
-# IMAP by Loopthink
+# Loopthink for IMAP
 
 Let your whole team ask a shared mailbox in plain language, without handing out the mailbox password. Read-only by default, masked and logged by Loopthink.
 
@@ -49,7 +49,7 @@ Good to know:
 
 ## Install
 
-In Claude, add **IMAP by Loopthink** from the directory. In Claude Code:
+In Claude, add **Loopthink for IMAP** from the directory. In Claude Code:
 
 ```bash
 claude plugin marketplace add loopthink/claude-plugin
@@ -67,7 +67,7 @@ walks through connecting and the first question.
 
 | Component | Name | What it does |
 | --- | --- | --- |
-| MCP server | `imap` | Remote connector at `https://mcp.eu.loopthink.ai/chatgpt/imap`, OAuth 2.0 with PKCE and dynamic client registration |
+| MCP server | `imap` | Remote connector at `https://mcp.eu.loopthink.ai/mcp/imap`, OAuth 2.0 with PKCE and dynamic client registration |
 | Skill | `/loopthink-imap:get-started` | Connect the system, find out why a tool returns nothing, and how to ask |
 
 The plugin ships no binaries and runs no code on your machine. It contributes

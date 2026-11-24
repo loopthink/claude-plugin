@@ -1,9 +1,9 @@
 ---
 name: get-started
-description: Set up IMAP by Loopthink or work out why it returns no mail. Use when the user has just added the app, asks what it can do, gets a "connect it at …" message, or a mail tool says it is not switched on.
+description: Set up Loopthink for IMAP or work out why it returns no mail. Use when the user has just added the app, asks what it can do, gets a "connect it at …" message, or a mail tool says it is not switched on.
 ---
 
-# Get started with IMAP by Loopthink
+# Get started with Loopthink for IMAP
 
 The app reads the mailboxes the user connected in Loopthink over IMAP, and only
 the ones their member group was granted. The tools are always the same:

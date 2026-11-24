@@ -1,8 +1,17 @@
-# Odoo by Loopthink
+# Loopthink for Odoo
 
-Ask about the contacts, sales, invoices, stock, CRM and projects in your Odoo database in plain language. Read-only unless you allow more. Odoo 19 and newer.
+Let your whole team ask your Odoo database in plain language, without giving everyone an Odoo login or an API key. Limited to the models you enable, read-only by default and logged by Loopthink. Odoo 19 and newer.
 
-Ask about the contacts, sales, invoices, stock, CRM and projects in your Odoo database in plain language. Read-only unless you allow more. Odoo 19 and newer.
+Let your whole team ask your Odoo database in plain language, without giving everyone an Odoo login or an API key. Limited to the models you enable, read-only by default and logged by Loopthink. Odoo 19 and newer.
+
+Claude looks up the models and fields, searches the records and answers from them: contacts, sales, invoices, stock, CRM and projects. Loopthink sits between the two and enforces the rules on every call.
+
+What Loopthink adds on top of Odoo:
+- A model allow-list. The app only reaches the models enabled for the server, 15 common ones to start with. An admin adds or removes models in Loopthink, and a model that is not enabled answers with a notice.
+- Team access without shared keys. Odoo is connected once. Every person signs in with their own account, and each member group is granted reading and writing separately.
+- An audit log. Every call is recorded with who ran it.
+- Guarded changes. Creating and updating records are separate tools that stay off until an admin allows them. Then Claude asks before each change. Nothing is ever deleted.
+- Masking. Fields with personal data can be masked per server before they reach the chat.
 
 What you can ask:
 - Which sales orders were confirmed this week, and what is their total?
@@ -16,17 +25,10 @@ How it works:
 2. Right after sign-in, a form on our page asks for the address of your Odoo and an API key (in Odoo under My Preferences > Account Security > New API Key), and whether changes are allowed. We run one read to test it. Credentials are entered there, never in the chat.
 3. Ask in Claude. Nothing needs refreshing after you connect.
 
-Read-only by default:
-- Everything is read-only by default: records are searched, counted and read.
-- Creating and updating records stays off unless you tick "Also allow changes" on the form, or an admin allows it later. Claude asks you before each change. Nothing is ever deleted.
-- The app sees the models that are enabled for the server, 15 common ones to start with. An admin adds or removes models in Loopthink.
+Good to know:
 - The API key carries the access rights and record rules of its Odoo user. A user of its own with only the apps it needs is the safest choice.
+- The API key is stored encrypted and never shown again.
 - Needs Odoo 19 or newer (JSON-2 API). On Odoo Online the external API is part of the Custom plan.
-
-Built for teams:
-- Every person signs in with their own account.
-- Access is granted per member group, reading and writing separately.
-- Every call is logged with who ran it.
 
 ## What it can do
 
@@ -35,6 +37,8 @@ Built for teams:
 - Search records of a model with an Odoo domain and chosen fields
 - Count records for totals
 - Read records by id, and list the companies of the database
+- Reach only the models the workspace enabled for the server
+- Grant access per member group, reading and writing separately, and log every call
 - Create or update records, only where the workspace switched that on
 
 ## Try asking
@@ -45,7 +49,7 @@ Built for teams:
 
 ## Install
 
-In Claude, add **Odoo by Loopthink** from the directory. In Claude Code:
+In Claude, add **Loopthink for Odoo** from the directory. In Claude Code:
 
 ```bash
 claude plugin marketplace add loopthink/claude-plugin
@@ -63,7 +67,7 @@ walks through connecting and the first question.
 
 | Component | Name | What it does |
 | --- | --- | --- |
-| MCP server | `odoo` | Remote connector at `https://mcp.eu.loopthink.ai/chatgpt/odoo`, OAuth 2.0 with PKCE and dynamic client registration |
+| MCP server | `odoo` | Remote connector at `https://mcp.eu.loopthink.ai/mcp/odoo`, OAuth 2.0 with PKCE and dynamic client registration |
 | Skill | `/loopthink-odoo:get-started` | Connect the system, find out why a tool returns nothing, and how to ask |
 
 The plugin ships no binaries and runs no code on your machine. It contributes
